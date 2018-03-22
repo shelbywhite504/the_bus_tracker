@@ -4,6 +4,9 @@
   <strong>City:</strong>
   <%= @destination.city %>
 </p>
+ <p><%= @destination.latitude %>, <%= @destination.longitude %></p>
+
+ <p><%= @destination.description %></p>
 
 <p>
   <strong>Country:</strong>
@@ -12,3 +15,4 @@
 
 <%= link_to 'Edit', edit_destination_path(@destination) %> |
 <%= link_to 'Back', destinations_path %>
+<div id="destination-map"></div>
